@@ -1,0 +1,575 @@
+
+
+body {
+  /* font-family: 'Nanum Gothic', sans-serif; */
+  font-family: 'Sawarabi Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  height: 100%;
+  /* min-width: 1024px; */
+  margin: 0;
+}
+
+h3 {
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: .2em;
+  margin-bottom: 40px;
+}
+
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 80px;
+  margin-bottom: 0;
+}
+
+
+
+/* ヘッダー */
+.header {
+  /* flex: 1; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  padding: 20px;
+  width: 100%;
+  background-color: black;
+  height: 60px;
+  padding: 30px;
+  margin-right: 0;
+}
+
+.h-logo-img {
+  width: 140px;
+  height: auto;
+  float: left;
+}
+
+.h-nav {
+  background-color: black;
+  padding-right: 36px;
+  margin-right: 20px;
+}
+
+
+.h-nav li {
+  display: inline-block;
+  padding-right: 12px;
+  letter-spacing: .2em;
+}
+
+.h-nav-item span {
+  color: white;
+}
+
+.h-nav-item a {
+  text-decoration: none;
+  color: gray;
+  position: relative;
+}
+
+.h-nav-item a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: green;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+
+
+/* リストホバー */
+.h-nav-item a:hover::after {
+  transform: scale(1, 1);
+}
+
+/* ------- */
+
+/* main----- */
+.main-container {
+  height: auto;
+  width: 100%;
+  margin-bottom: 50px;
+  /* background-color: skyblue; */
+}
+
+
+.m-wrapper p {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 750px;
+  left: 100px;
+  font-size: 36px;
+}
+
+.m-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+} 
+
+/* ---------- */
+/* ABOUT----- */
+.heading-primary {
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: .2em;
+  margin-bottom: 80px;
+  margin-top: 200px;
+}
+
+.main-about {
+  display: flex;
+  justify-content: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.about-imgbox {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+.about-img {
+  width: 80%;
+  height: auto;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.about-description {
+  width: 400px;
+  height: auto;
+  line-height: 2em;
+  margin-top: 80px;
+  font-size: large;
+}
+
+/* ---------- */
+/* WORKS----- */
+.main-works {
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.main-works p {
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: .2em;
+  margin-bottom: 40px;
+}
+
+
+
+.works-item {
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  margin: 0 auto;
+
+}
+
+.w-item {
+  width: 320px;
+  height: 400px;
+  /* background-color: aquamarine; */
+  border: 2px solid rgb(168, 168, 168);
+  border-radius: 20px;
+
+}
+
+.w-item p {
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.w-item video {
+  width: 300px;
+  height: 300px;
+}
+
+/* ---------- */
+/* SKILL---- */
+.main-skill {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.skill-description {
+  margin-right: 50px;
+  margin-bottom: 0;
+}
+
+.skill-description h3 {
+  border-bottom: 4px solid green;
+  line-height: 2em;
+  font-size: 20px;
+}
+
+.skill-description p {
+  font-size: 22px;
+  letter-spacing: .2em;
+}
+
+.skill-description span {
+  font-size: 18px;
+  line-height: .4em;
+
+}
+
+.skill-img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.skill-img {
+  width: 30%;
+  height: auto;
+  padding-top: 20px;
+}
+
+
+/* --------- */
+/* contact-- */
+.main-contact {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.contact-h4 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 40px;
+  letter-spacing: .1em;
+  line-height: 2em;
+}
+
+.icon img {
+  width: 60px;
+  height: auto;
+}
+
+
+/* --------- */
+
+
+
+
+/* footer---- */
+.footer {
+  height: 80px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.f-inner {
+  height: 80px;
+  background-color: black;
+}
+
+
+.copyright {
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: white;
+}
+
+/* pagetopボタン */
+#pagetop{
+  position:fixed;
+  right: 16px;
+  bottom: 22px;
+  cursor:pointer;
+  z-index: 10;
+}
+
+.pagetop-btn {
+  width: 60px;
+  height: auto;
+}
+
+
+
+/* HBGメニュー770px以上で非表示 */
+@media screen and (min-width: 770px) {
+  .hamburger,
+  .globalMenuSp {
+    display: none;
+  }
+}
+/* ---------------- */
+/* ---------- */
+
+/* レスポンシブ ---------- */
+/* 768px未満 */
+@media screen and (max-width: 768px) {
+
+  #wrapper {
+    margin-bottom: 0;
+  }
+  
+  .m-wrapper p, h4 {
+    font-size: 12px;
+  }
+
+  .about-description p{
+    font-size: 12px;
+  }
+
+
+  .h-nav {
+    display: none;
+  }
+
+  .heading-primary {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .m-wrapper p {
+    display: none;
+  }
+ 
+  #wrapper {
+    width: 90%;
+    margin: 5%;
+  }
+
+  .main-about,
+  .works-item,
+  .main-skill {
+    flex-direction: column;
+    
+  }
+
+  .main-about{
+   align-items: center;
+    
+  }
+
+  .about-imgbox {
+    margin-right: 0;
+  }
+
+  .about-description {
+    margin-top: 0;
+    width: 80%;
+  }
+
+  /* works */
+
+  .main-works {
+    margin-top: 40px;
+    margin-left: 0;
+    font-size: 12px;
+    margin-right: 0;
+  }
+
+  .w-item {
+    margin-bottom: 40px;
+    width: 320px;
+  }
+  .w-item p {
+    font-size: 12px;
+  }
+
+ 
+  
+
+  /* skill */
+  .main-skill {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .skill-description {
+    margin-right: auto;
+    margin-left: auto;
+   
+  }
+
+  .skill-description p {
+    font-size: 14px;
+  }
+  .skill-description span {
+    font-size: 12px;
+  }
+
+  .skill-img-1 {
+    margin-right: 0;
+  }
+
+  .skill-img-1 img,
+  .skill-img-2 img {
+    width: 50%;
+    height: auto;
+  }
+
+  .main-contact {
+    width: 60%;
+    justify-content: center;
+  }
+
+  .icon {
+    width: 40%;
+    height: auto;
+  }
+  /*　ハンバーガーボタン　*/
+.hamburger {
+  display : block;
+  position: fixed;
+  z-index : 3;
+  right : 13px;
+  top   : 12px;
+  width : 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+.hamburger span {
+  display : block;
+  position: absolute;
+  width   : 30px;
+  height  : 2px ;
+  left    : 6px;
+  background : #555;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition   : 0.3s ease-in-out;
+  transition        : 0.3s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+  top: 10px;
+}
+.hamburger span:nth-child(2) {
+  top: 20px;
+}
+.hamburger span:nth-child(3) {
+  top: 30px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active span{
+  background :#fff;
+}
+.hamburger.active span:nth-child(1) {
+  -webkit-transform: translateY(6px);
+  -moz-transform   : translateY(6px);
+  transform        : translateY(6px);
+}
+.hamburger.active span:nth-child(2){
+-webkit-transform: translateY(-4px);
+  -moz-transform   : translateY(-4px);
+  transform        : translateY(-4px);
+}  
+
+.hamburger.active span:nth-child(3) {
+  -webkit-transform: translateY(-14px);
+  -moz-transform   : translateY(-14px);
+  transform        : translateY(-14px);
+}
+
+nav.globalMenuSp {
+  position: fixed;
+  z-index : 2;
+  top  : 0;
+  left : 0;
+  color: #fff;
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transition: opacity .6s ease, visibility .6s ease;
+}
+
+nav.globalMenuSp ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+nav.globalMenuSp ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  transition: .4s all;
+}
+nav.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+}
+nav.globalMenuSp ul li:hover{
+  background :#ddd;
+}
+
+nav.globalMenuSp ul li a:hover{
+  color: green;
+}
+
+nav.globalMenuSp ul li a {
+  display: block;
+  color: white;
+  padding: 1em 0;
+  text-decoration :none;
+  letter-spacing: 0.2em;
+}
+
+nav.globalMenuSp ul li span {
+  color: gray;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  opacity: 100;
+
+}
+
+
+
+
+
+
+}
+
+/* -------- */
